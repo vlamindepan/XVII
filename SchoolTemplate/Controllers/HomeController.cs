@@ -21,6 +21,10 @@ namespace SchoolTemplate.Controllers
 
       return View(products);
     }
+    public IActionResult ShowAll()
+    {
+            return View();
+    }
 
     private List<Product> GetProducts()
     {
