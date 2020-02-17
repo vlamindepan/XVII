@@ -52,7 +52,36 @@ namespace SchoolTemplate.Controllers
       return products;
     }
 
-    public IActionResult Privacy()
+        private List<Voorstelling> GetVoorstellingen()
+        {
+            List<Voorstelling> voorstellingen = new List<Voorstelling>();
+
+            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("select * from voorstelling", conn);
+
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Voorstelling v = new Voorstelling
+                        {
+                            Id = Convert.ToInt32(reader["Id"]),
+                            Naam = reader["Naam"].ToString(),
+                            Beschrijving = reader["Beschrijving"].ToString(),
+                            Datum = DateTime.Parse(reader["Datum"].ToString()),
+                     
+                        };
+                        voorstellingen.Add(v);
+                    }
+                }
+            }
+
+            return voorstellingen;
+        }
+
+        public IActionResult Privacy()
     {
       return View();
     }
