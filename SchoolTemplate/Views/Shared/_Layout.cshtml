@@ -2,13 +2,13 @@
 <html>
 <head>
     <link rel="stylesheet" href="~/css/site.css" />
-    <div class="header">
-        <h1>XVII</h1>
-    </div>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    
     <style>
         h1 {
-            font-family: 'Jacques Francois Shadow'; 
-}
+            font-family: 'Spartan', sans-serif;
+        }
+
         ul {
             list-style-type: none;
             margin: 0;
@@ -27,15 +27,18 @@
             }
     </style>
 </head>
-  <body>
-  <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#programma">Programma</a></li>
-      <li><a href="#bezoekersinformatie">Bezoekersinformatie</a></li>
-      <li><a href="#zakelijk">Zakelijk</a></li>
-  </ul>
+<body>
+    <div class="header">
+        <h1>XVII</h1>
+    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#programma">Programma</a></li>
+        <li><a href="#bezoekersinformatie">Bezoekersinformatie</a></li>
+        <li><a href="#zakelijk">Zakelijk</a></li>
+    </ul>
 
-      
-      @RenderBody()
-  </body>
+
+    @RenderBody()
+</body>
 </html>
