@@ -60,3 +60,25 @@ body {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 }
+
+
+.h1 {
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6699ff;
+}
+
+.li {
+    float: left;
+}
+
+.li a {
+        display: block;
+        padding: 8px;
+}
