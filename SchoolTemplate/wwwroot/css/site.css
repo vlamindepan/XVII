@@ -95,10 +95,11 @@ ul {
     overflow: hidden;
     background-color: #6699ff;
     font-family: 'Jacques Francois Shadow', cursive;
+    text-align: center;
 }
 
 li {
-    float: left;
+    display: inline-block;
 }
 
     li a {
