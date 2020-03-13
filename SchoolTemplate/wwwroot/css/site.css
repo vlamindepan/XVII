@@ -90,8 +90,8 @@ h1 {
 
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 25px;
+    padding: 10px;
     overflow: hidden;
     background-color: #6699ff;
     font-family: 'Jacques Francois Shadow', cursive;
