@@ -62,14 +62,14 @@ body {
 
 .header {
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Crimson Text', Times, serif;
     color: white;
-
 }
 
 
 .h1 {
     font-family: 'Jacques Francois Shadow', cursive;
+    color: white;
 }
 
 .ul {
@@ -90,7 +90,8 @@ body {
 }
 
 h1 {
-    font-family: 'Jacques Francois Shadow', cursive;
+    font-family: 'Crimson Text', cursive;
+    color: white;
 }
 
 ul {
@@ -98,16 +99,25 @@ ul {
     margin: 25px;
     padding: 10px;
     overflow: hidden;
-    background-color: #6699ff;
-    font-family: 'Jacques Francois Shadow', cursive;
+    background-color: #3b5280;
+    font-family: 'Crimson Text', cursive;
     text-align: center;
 }
 
 li {
     display: inline-block;
+    
 }
 
     li a {
         display: block;
-        padding: 8px;
+        padding: 20px;
+        margin: 0, 12%, 0 ,12%;
     }
+
+a {
+    text-decoration:none;
+    color:aliceblue;
+    font-family: 'Crimson Text';
+    font-size:140%;
+}
