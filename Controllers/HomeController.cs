@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
@@ -16,10 +16,13 @@ namespace SchoolTemplate.Controllers
 
 
         public IActionResult Index()
-    {
-      return View();
-    }
-    public IActionResult ShowAll()
+        {
+            return View();
+        }
+
+
+        [Route("Menu")]
+        public IActionResult Menu()
     {
             return View();
     }
@@ -85,6 +88,18 @@ namespace SchoolTemplate.Controllers
     {
       return View();
     }
+
+        [Route("FAQ")]
+        public IActionResult FAQ()
+        {
+            return View();
+        }
+
+        [Route("About")]
+        public IActionResult About()
+        {
+            return View();
+        }
         [Route("Zakelijk")]
         public IActionResult Zakelijk()
         {
